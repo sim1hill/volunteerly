@@ -1,0 +1,2 @@
+class ProjectEventsController < ApplicationController
+end
