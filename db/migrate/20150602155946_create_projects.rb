@@ -5,7 +5,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :req_skills
       t.string :opt_skills
       t.string :location
-      t.belongs_to :organization
+      t.belongs_to :user
       t.timestamps null: false
     end
   end

@@ -1,6 +1,6 @@
-class DeviseCreateVolunteers < ActiveRecord::Migration
+class DeviseCreateUsers < ActiveRecord::Migration
   def change
-    create_table(:volunteers) do |t|
+    create_table(:users) do |t|
 
       t.string :name
       t.string :location
@@ -39,9 +39,9 @@ class DeviseCreateVolunteers < ActiveRecord::Migration
       t.timestamps null: false
     end
 
-    add_index :volunteers, :email,                unique: true
-    add_index :volunteers, :reset_password_token, unique: true
-    # add_index :volunteers, :confirmation_token,   unique: true
-    # add_index :volunteers, :unlock_token,         unique: true
+    add_index :users, :email,                unique: true
+    add_index :users, :reset_password_token, unique: true
+    # add_index :users, :confirmation_token,   unique: true
+    # add_index :users, :unlock_token,         unique: true
   end
 end
