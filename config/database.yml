@@ -6,11 +6,11 @@ default: &default
 
 development:
   <<: *default
-  database: volunteer_development
+  database: volunteerly_development
 
 test:
   <<: *default
-  database: volunteer_test
+  database: volunteerly_test
 
 production:
   url: <%= ENV["DATABASE_URL"] %>
